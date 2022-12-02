@@ -51,6 +51,11 @@
   font-family: var(--font-face) !important;
 }
 
+#rendered-md {
+  max-width: 85% !important;
+  text-align: justify !important;
+}
+
 p, ul, ol, li {
   color: var(--ctp-frappe-text) !important;
 }
