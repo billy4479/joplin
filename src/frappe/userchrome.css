@@ -28,8 +28,9 @@
   --ctp-frappe-base: #303446;
   --ctp-frappe-mantle: #292c3c;
   --ctp-frappe-crust: #232634;
-  --font-face: "Noto Sans", Arial, Helvetica, sans-serif;
-  --font-mono: "Roboto Mono", Courier, monospace;
+  --font-face: "SF Pro Display", "Ubuntu", "Noto Sans", Arial, Helvetica,
+    sans-serif;
+  --font-mono: "FiraCode Nerd Font", "Roboto Mono", Courier, monospace;
   --font-size: 13px;
   --icon-size: 16px;
 
@@ -59,6 +60,10 @@ body {
 }
 .rli-root {
   background-color: var(--ctp-frappe-base) !important;
+}
+
+div.CodeMirror * {
+  font-family: var(--font-face) !important;
 }
 
 /* Icons */
