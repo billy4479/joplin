@@ -1,38 +1,39 @@
 /* Style for rendered Markdown */
 :root {
   --ctp-frappe-rosewater: #f2d5cf;
-	--ctp-frappe-flamingo: #eebebe;
-	--ctp-frappe-pink: #f4b8e4;
-	--ctp-frappe-mauve: #ca9ee6;
-	--ctp-frappe-red: #e78284;
-	--ctp-frappe-maroon: #ea999c;
-	--ctp-frappe-peach: #ef9f76;
-	--ctp-frappe-yellow: #e5c890;
-	--ctp-frappe-green: #a6d189;
-	--ctp-frappe-teal: #81c8be;
-	--ctp-frappe-sky: #99d1db;
-	--ctp-frappe-sapphire: #85c1dc;
-	--ctp-frappe-blue: #8caaee;
-	--ctp-frappe-lavender: #babbf1;
-	--ctp-frappe-text: #c6ceef;
-	--ctp-frappe-subtext1: #b5bddc;
-	--ctp-frappe-subtext0: #a5acc9;
-	--ctp-frappe-overlay2: #949bb7;
-	--ctp-frappe-overlay1: #838aa4;
-	--ctp-frappe-overlay0: #737891;
-	--ctp-frappe-surface2: #62677e;
-	--ctp-frappe-surface1: #51566c;
-	--ctp-frappe-surface0: #414559;
-	--ctp-frappe-base: #303446;
-	--ctp-frappe-mantle: #292c3c;
-	--ctp-frappe-crust: #232634;
-  --white: #D9E0EE;
+  --ctp-frappe-flamingo: #eebebe;
+  --ctp-frappe-pink: #f4b8e4;
+  --ctp-frappe-mauve: #ca9ee6;
+  --ctp-frappe-red: #e78284;
+  --ctp-frappe-maroon: #ea999c;
+  --ctp-frappe-peach: #ef9f76;
+  --ctp-frappe-yellow: #e5c890;
+  --ctp-frappe-green: #a6d189;
+  --ctp-frappe-teal: #81c8be;
+  --ctp-frappe-sky: #99d1db;
+  --ctp-frappe-sapphire: #85c1dc;
+  --ctp-frappe-blue: #8caaee;
+  --ctp-frappe-lavender: #babbf1;
+  --ctp-frappe-text: #c6ceef;
+  --ctp-frappe-subtext1: #b5bddc;
+  --ctp-frappe-subtext0: #a5acc9;
+  --ctp-frappe-overlay2: #949bb7;
+  --ctp-frappe-overlay1: #838aa4;
+  --ctp-frappe-overlay0: #737891;
+  --ctp-frappe-surface2: #62677e;
+  --ctp-frappe-surface1: #51566c;
+  --ctp-frappe-surface0: #414559;
+  --ctp-frappe-base: #303446;
+  --ctp-frappe-mantle: #292c3c;
+  --ctp-frappe-crust: #232634;
+  --white: #d9e0ee;
   --black: #000000;
-  --light: #C9CFFF;
-  --lighter-grey: #C3BAC6;
-  --light-grey: #988BA2;
+  --light: #c9cfff;
+  --lighter-grey: #c3bac6;
+  --light-grey: #988ba2;
 
-	--font-face: "Ubuntu", "Noto Sans", Arial, Helvetica, sans-serif;
+  --font-face: "SF Pro Display", "Inter", "Ubuntu", "Noto Sans", Arial,
+    Helvetica, sans-serif;
   --font-mono: "FiraCode Nerd Font", "Roboto Mono", Courier, monospace;
   --font-size: 13px;
   --icon-size: 16px;
@@ -45,8 +46,10 @@
   --opacity-0-8: 0.8;
 }
 
-
-#rendered-md, body, th, td {
+#rendered-md,
+body,
+th,
+td {
   background-color: var(--ctp-frappe-base) !important;
   font-family: var(--font-face) !important;
 }
@@ -56,7 +59,10 @@
   text-align: justify !important;
 }
 
-p, ul, ol, li {
+p,
+ul,
+ol,
+li {
   color: var(--ctp-frappe-text) !important;
 }
 
@@ -85,7 +91,11 @@ h1 {
   font-weight: var(--bolder) !important;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   border-bottom: 0 !important;
   font-weight: var(--regular) !important;
 }
@@ -112,7 +122,8 @@ a:hover {
 * CODE BLOCK
 *********************************************************************************/
 
-pre, .hljs {
+pre,
+.hljs {
   background-color: var(--ctp-frappe-mantle) !important;
   font-family: var(--font-mono) !important;
   padding: 10px !important;
@@ -165,11 +176,12 @@ td {
 *********************************************************************************/
 
 ::selection {
-	background-color: var(--ctp-frappe-lavender) !important;
+  background-color: var(--ctp-frappe-lavender) !important;
   color: var(--ctp-frappe-crust) !important;
 }
 
-mark, mark strong {
+mark,
+mark strong {
   background: var(--ctp-frappe-yellow) !important;
   color: var(--ctp-frappe-crust) !important;
 }
@@ -221,14 +233,19 @@ mark[data-markjs] {
 *********************************************************************************/
 
 @media print {
-
-  #rendered-md, body, th, td {
+  #rendered-md,
+  body,
+  th,
+  td {
     /* background-color: var(--white) !important; */
     background-color: #ffffff !important;
     font-family: var(--font-face) !important;
   }
 
-  p, ul, ol, li {
+  p,
+  ul,
+  ol,
+  li {
     color: var(--black) !important;
   }
 
@@ -236,15 +253,15 @@ mark[data-markjs] {
     color: var(--black) !important;
   }
   th {
-  border: 1px solid var(--black) !important;
-  color: var(--black) !important;
-  border-bottom: 1px solid var(--black) !important;
+    border: 1px solid var(--black) !important;
+    color: var(--black) !important;
+    border-bottom: 1px solid var(--black) !important;
   }
 
   td {
-  border: 1px solid var(--black) !important;
-  color: var(--black) !important;
-  border-bottom: 1px solid var(--black) !important;
+    border: 1px solid var(--black) !important;
+    color: var(--black) !important;
+    border-bottom: 1px solid var(--black) !important;
   }
 
   h1 {
@@ -252,7 +269,11 @@ mark[data-markjs] {
     font-weight: var(--bolder) !important;
   }
 
-  h2, h3, h4, h5, h6 {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     border-bottom: 0 !important;
     font-weight: var(--bolder) !important;
   }
@@ -268,32 +289,33 @@ mark[data-markjs] {
     text-decoration: underline !important;
   }
 
-/* Inline code */
-.inline-code {
-  background-color: #F8F8F8 !important;
-  border: 0 !important;
-  font-family: var(--font-mono) !important;
-  /* color: var(--ctp-frappe-yellow) !important; */
-  font-size: 14px !important;
-}
+  /* Inline code */
+  .inline-code {
+    background-color: transparent !important;
+    border: 0 !important;
+    font-family: var(--font-mono) !important;
+    /* color: var(--ctp-frappe-yellow) !important; */
+    color: #1e1e2e !important;
+    font-size: 14px !important;
+  }
 
-pre, .hljs {
-  background-color: #F8F8F8 !important;
-  font-family: var(--font-mono) !important;
-  padding: 10px !important;
-  color: var(--ctp-frappe-crust) !important;
-  font-size: 14px !important;
-  overflow: scroll !important;
-}
+  pre,
+  .hljs {
+    background-color: var(--lighter-grey) !important;
+    font-family: var(--font-mono) !important;
+    padding: 10px !important;
+    color: var(--ctp-frappe-crust) !important;
+    font-size: 14px !important;
+    overflow: scroll !important;
+  }
 
-blockquote {
-  background-color: #F8F8F8 !important;
-  padding: 10px !important;
-  color: var(--ctp-frappe-crust) !important;
-  font-size: 14px !important;
-  font-style: italic !important;
-  border: 0 !important;
-  border-left: 5px solid #E8E8E8 !important;
-}
-
+  blockquote {
+    background-color: var(--lighter-grey) !important;
+    padding: 10px !important;
+    color: var(--ctp-frappe-crust) !important;
+    font-size: 14px !important;
+    font-style: italic !important;
+    border: 0 !important;
+    border-left: 5px solid var(--light-grey) !important;
+  }
 }
